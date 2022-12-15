@@ -100,8 +100,8 @@ const SwapComponent = () => {
 
   return (
     <div className='eth-card w-[35%] p-4 px-6 rounded-xl'>
-      <div className='flex items-center justify-between py-4 px-1'>
-        <p>Swap</p>
+      <div className='flex items-center justify-between py-4 px-1 text-bold'>
+        <p>TOKENS SWAP</p>
         <CogIcon className='h-6' />
       </div>
       <div className='relative bg-[#212429] p-4 py-6 rounded-xl mb-2 border-[2px] border-transparent hover:border-zinc-600'>
@@ -173,12 +173,8 @@ const SwapComponent = () => {
   }
 
   function getSwapBtnClassName() {
-    let className = 'p-4 w-full my-2 rounded-xl'
-    className +=
-      swapBtnText === ENTER_AMOUNT || swapBtnText === CONNECT_WALLET
-        ? ' text-zinc-400 bg-zinc-800 pointer-events-none'
-        : ' bg-blue-700'
-    className += swapBtnText === INCREASE_ALLOWANCE ? ' bg-yellow-600' : ''
+    let className = 'p-4 w-full my-2 rounded-xl bg-black items-center justify-center'
+    
     return className
   }
 
