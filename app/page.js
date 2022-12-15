@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'next-themes';
-import { Navbar, Footer, Welcome, LogoCompany, Services, Transactions, Banner, Stats } from '../components';
+import { Navbar, Footer, Welcome, LogoCompany, Transactions, Banner, Stats } from '../components';
 import Script from 'next/script';
 import { TransactionProvider } from '../context/TransactionContext';
 
@@ -26,9 +26,6 @@ const Page = () => (
     <div className="border-t dark:border-nft-black-1 border-nft-gray-1 ">
       <Welcome />
     </div>
-    <div className="border-t dark:border-nft-black-1 border-nft-gray-1 ">
-          <Services />
-        </div>
         <div className="flex justify-center items-start w-full border-t dark:border-nft-black-1 border-nft-gray-1 ">
           <Transactions />
         </div>

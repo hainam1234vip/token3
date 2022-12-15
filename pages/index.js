@@ -27,9 +27,6 @@ const Home = () => (
     <div className="border-t dark:border-nft-black-1 border-nft-gray-1 ">
       <Welcome />
     </div>
-    <div className="border-t dark:border-nft-black-1 border-nft-gray-1 ">
-          <Services />
-        </div>
         <div className="flex justify-center items-start w-full border-t dark:border-nft-black-1 border-nft-gray-1 ">
           <Transactions />
         </div>
